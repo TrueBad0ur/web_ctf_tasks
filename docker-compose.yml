@@ -1,0 +1,12 @@
+version: '3'
+services:
+    misc:
+        container_name: misc
+        build: ./misc
+        ports:
+            - "4444:4444"
+    web:
+        container_name: web
+        build: ./web
+        ports:
+            - "31338:31338"
